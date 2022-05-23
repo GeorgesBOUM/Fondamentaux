@@ -78,7 +78,7 @@ public class Ville {
 	}
 
 	public String description() {
-		return this.getNom() + " est une ville de " + this.getPays() + " classée comme " + this.getCategorie();
+		return this.getNom() + " est une ville de " + this.getPays() + " classée comme " + this.getCategorie() + ". ";
 	}
 
 	@Override
