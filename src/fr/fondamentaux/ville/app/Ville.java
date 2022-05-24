@@ -1,4 +1,4 @@
-package fr.fondamentaux.app;
+package fr.fondamentaux.ville.app;
 
 /**
  * Il faudra: penser à séparer les traitements du "model", le "calcul de la

@@ -1,4 +1,4 @@
-package fr.fondamentaux.app;
+package fr.fondamentaux.ville.app;
 
 public class Capitale extends Ville {
 	private String monument;

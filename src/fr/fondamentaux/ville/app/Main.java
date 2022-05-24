@@ -1,4 +1,4 @@
-package fr.fondamentaux.app;
+package fr.fondamentaux.ville.app;
 
 public class Main {
 
