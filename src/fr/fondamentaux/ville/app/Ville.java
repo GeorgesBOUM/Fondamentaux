@@ -22,13 +22,17 @@ public class Ville {
 		nombreDeVillesCreees += 1;
 	}
 
-	public Ville(String nom, String pays, int nombreHabitants) {
-		System.out.println("Creation d'une ville avec paramèrtres");
-		this.nom = nom;
-		this.pays = pays;
-		this.nombreHabitants = nombreHabitants;
-		this.setCategorie(nombreHabitants);
-		nombreDeVillesCreees += 1;
+	public Ville(String nom, String pays, int nombreHabitants) throws NombreHabitantException{
+		if (nombreHabitants < 0) {
+			throw new NombreHabitantException();
+		} else {
+			System.out.println("Creation d'une ville avec paramèrtres");
+			this.nom = nom;
+			this.pays = pays;
+			this.nombreHabitants = nombreHabitants;
+			this.setCategorie(nombreHabitants);
+			nombreDeVillesCreees += 1;
+		}
 	}
 
 	public String getNom() {
