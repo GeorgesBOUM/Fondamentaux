@@ -27,6 +27,7 @@ public class Main {
 	    r.faireLeBeau();
 	    r.faireCalin();
 	    r.faireLechouille();
+	    System.out.println("--------------------------------------------");
 	}
 
 }
