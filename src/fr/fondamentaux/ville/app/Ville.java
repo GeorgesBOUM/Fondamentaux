@@ -11,14 +11,14 @@ public class Ville {
 	private String nom;
 	private String pays;
 	private int nombreHabitants;
-	private String categorie;
+	private Categorie categorie;
 
 	public Ville() {
 		System.out.println("Creation d'une ville sans paramèrtres");
 		this.nom = "Inconnu";
 		this.pays = "Inconnu";
 		this.nombreHabitants = 0;
-		this.categorie = "Inconnue";
+		this.categorie = Categorie.INCONNUE;
 		nombreDeVillesCreees += 1;
 	}
 
@@ -59,7 +59,7 @@ public class Ville {
 		this.nombreHabitants = nombreHabitants;
 	}
 
-	public String getCategorie() {
+	public Categorie getCategorie() {
 		return this.categorie;
 	}
 
@@ -69,15 +69,15 @@ public class Ville {
 
 	public void setCategorie(int nombreHabitants) {
 		if (nombreHabitants < 1000) {
-			this.categorie = "village";
+			this.categorie = Categorie.VILLAGE;
 		} else if (nombreHabitants >= 1000 && nombreHabitants < 5000) {
-			this.categorie = "petite ville";
+			this.categorie = Categorie.PETITE_VILLE;
 		} else if (nombreHabitants >= 5000 && nombreHabitants < 25000) {
-			this.categorie = "ville moyenne";
+			this.categorie = Categorie.VILLE_MOYENNE;
 		} else if (nombreHabitants >= 25000 && nombreHabitants < 100000) {
-			this.categorie = "grande ville";
+			this.categorie = Categorie.GRANDE_VILLE;
 		} else if (nombreHabitants >= 100000) {
-			this.categorie = "métropole";
+			this.categorie = Categorie.METROPOLE;
 		}
 	}
 

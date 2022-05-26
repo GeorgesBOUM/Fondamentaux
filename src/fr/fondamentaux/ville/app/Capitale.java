@@ -23,8 +23,8 @@ public class Capitale extends Ville {
 	@Override
 	public String toString() {
 		return super.getNom() + 
-				"[Pays=" + super.getPays() + ", Nombre d'abitants=" + getNombreHabitants() + 
-				"Monument=" + this.getMonument() + "]";
+				"[Pays=" + super.getPays() + ", Nombre d'habitants=" + getNombreHabitants() + 
+				", Monument=" + this.getMonument() + "]";
 	}
 	
 }
